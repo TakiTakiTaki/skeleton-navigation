@@ -49,6 +49,23 @@ section {
   margin: 0 20px;
 }
 
+.collapse.in, .collapsing {
+  clear: both;
+}
+
+@media (max-width: 33.9em) {
+ .navbar-nav .nav-item {
+   margin-left: 1rem;
+ }
+ .pull-none {
+   float:none!important;
+ }
+}
+
+h2 {
+	margin-top: 0.83em!important;
+}
+
 .navbar-nav li.loader {
   margin: 12px 24px 0 6px;
 }
@@ -78,7 +95,7 @@ div.au-stagger {
   animation: fadeIn 2s;
 }
 
-.card {
+.skeleton-card {
   overflow: hidden;
   position: relative;
   border: 1px solid #CCC;
@@ -91,17 +108,17 @@ div.au-stagger {
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 }
 
-.card .content {
+.skeleton-card .content {
   margin-top: 10px;
 }
 
-.card .content .name {
+.skeleton-card .content .name {
   color: white;
   text-shadow: 0 0 6px rgba(0, 0, 0, .5);
   font-size: 18px;
 }
 
-.card .header-bg {
+.skeleton-card .header-bg {
   /* This stretches the canvas across the entire hero unit */
   position: absolute;
   top: 0;
@@ -112,13 +129,13 @@ div.au-stagger {
   border-radius: 6px 6px 0 0;
 }
 
-.card .avatar {
+.skeleton-card .avatar {
   position: relative;
   margin-top: 15px;
   z-index: 100;
 }
 
-.card .avatar img {
+.skeleton-card .avatar img {
   width: 100px;
   height: 100px;
   -webkit-border-radius: 50%;
