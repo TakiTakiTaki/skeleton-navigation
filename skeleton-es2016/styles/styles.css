@@ -49,6 +49,23 @@ section {
   margin: 0 20px;
 }
 
+.collapse.in, .collapsing {
+  clear: both;
+}
+
+@media (max-width: 33.9em) {
+ .navbar-nav .nav-item {
+   margin-left: 1rem;
+ }
+ .pull-none {
+   float:none!important;
+ }
+}
+
+h2 {
+	margin-top: 0.83em!important;
+}
+
 .navbar-nav li.loader {
   margin: 12px 24px 0 6px;
 }
